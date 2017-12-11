@@ -1,11 +1,13 @@
 import { combineReducers } from "redux";
 import BooksReducer from "./reducer_books"
-import ActiveBook from "./reducer_active_book"
+import ActiveBookReducer from "./reducer_active_book"
 
+// This is the application state. The BookReducer is
+// responsible for the books property and ActiveBookReducer
+// is responsible for the activeBook property.
 const rootReducer = combineReducers({
-  //state: (state = {}) => state
   books: BooksReducer,
-  activeBook: ActiveBook
+  activeBook: ActiveBookReducer
 });
 
 export default rootReducer;

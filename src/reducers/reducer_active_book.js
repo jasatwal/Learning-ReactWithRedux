@@ -1,3 +1,4 @@
+// Responsible for activeBook state property.
 export default function(state = null, action) {
     console.log("ActiveBookReducer", state, action);
     if (action.type === "BOOK_SELECTED") {
